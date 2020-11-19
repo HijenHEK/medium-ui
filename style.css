@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul , li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+
+}
+
+.navBar .right {
+    display: flex;
+    align-items: center;
+}
+
+.navBar .right > * {
+    margin: 0 0.5rem;
+}
+
+.btn {
+    padding: 0.25rem 0.7rem ;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgb(231, 231, 231);
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.btn:active {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+}
+.btn-green {
+    color: white;
+    background-color: rgb(26,137,23);
+}
+
+.btn-green:hover {
+    color: white;
+    background-color: rgb(23, 116, 18);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 37px;
+}
+
+.navBar .right .fa {
+    color: rgb(138, 138, 138);
+    padding: 0.3rem;
+}
+.navBar .right .fa:hover {
+    color: rgb(182, 182, 182);
+}
+
+
+.navBar .left {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    margin-right: 1rem;
+}
+
+.greeting {
+    font-weight:  800;
+    font-size: 1.2rem;
+}
+
+
+
+/*hero*/
+
+
+
+.hero {
+    display: flex;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.col {
+    max-width: 450px;
+    min-width: 350px;
+    padding: 0 1rem;
+    flex: 30%;
+}
+
+.follow {
+    border-left: 1px solid rgb(206, 206, 206);
+}
+.mvp .thumb {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 250px;
+    margin-bottom: 0.5rem
+}
+
+.mvp .info {
+    font-size: 0.95rem;
+}
+
+.tag {
+    background-color: rgb(29, 74, 172);
+    padding: 0 0.5rem;
+    color: white;
+    margin-right: 0.3rem;
+    border-radius: 5px;
+}
+
+.mvp .info .uname , .mvp .info .cat {
+    font-weight: 800;
+    font-size: 0.9rem;
+} 
+
+.mvp .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0    ;
+}
+
+.mvp .subtitle {
+    margin: 0.5rem 0;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: rgb(148, 148, 148);
+}
+.mvp .meta > *:first-child:hover {
+    color: rgb(19, 19, 19);
+}
+
+
+
+
+.latests .post {
+    display: flex;
+    height: 7rem;
+    margin: 1.5rem 0;
+}
+
+.latests .post .content {
+    flex: 70%;
+}
+.latests .post .thumb  {
+    flex: 30%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latests .post .thumb  img{
+    height: 100%;
+}
+
+.latests .post .content .info {
+    font-size: 0.9rem;
+}
+
+.latests .post .content .info .uname ,.latests .post .content .info .cat{
+    font-weight: 600;
+}
+
+.latests .post .content .title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+
+.follow .creators h2 , .topics h2{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.follow .creators .creator {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.follow .creator .avatar {
+    width: 70px;
+    margin-right: 0.5rem;
+}
+
+.follow .creator .name {
+    font-weight: 700;
+}
+
+.follow .creator .bio {
+    font-size: 0.7rem;
+    color: rgb(105, 105, 105);
+}
+
+.btn-follow {
+    border: 1px solid rgb(26,137,23);
+    color: rgb(26,137,23);
+}
+
+.btn-follow:hover {
+    border: 1px solid rgb(23, 116, 18);
+    color :rgb(23, 116, 18) ;
+}
+
+
+.follow .topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+
+.follow .topic .name {
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+.follow .topics .more {
+    margin-top: 0.5rem;
+    color: rgb(26,137,23);
+}
+.follow .topics .more:hover {
+    color: rgb(23, 116, 18);
+}
+
+
+
+@media ( max-width : 1049px) {
+    .col {
+        max-width: unset;
+        padding: 1rem;
+        /* flex: 100%; */
+
+    }
+    .hero .follow {
+        display :flex;
+        justify-content: space-between;
+        max-width: unset;
+        flex: unset;
+        width: 100%;
+        border-left : unset
+    }
+
+    .hero .follow .creators {
+        flex: 50%;
+        padding: 0 1rem;
+    }
+    .hero .follow .topics {
+        flex: 50%;
+        padding: 0 1rem;
+
+    }
+}
+
+@media ( max-width : 800px) {
+
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+        height: 180px;
+    }
+}
